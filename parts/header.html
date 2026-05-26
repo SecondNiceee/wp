@@ -1,16 +1,35 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|30","bottom":"var:preset|spacing|30"}}},"backgroundColor":"main","textColor":"white","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-white-color has-main-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)">
+<!-- wp:group {"style":{"position":{"type":"sticky","top":"0px"},"spacing":{"padding":{"top":"16px","bottom":"16px"}},"border":{"bottom":{"color":"#222222","width":"1px"}}},"backgroundColor":"background","layout":{"type":"constrained","contentSize":"1200px"},"className":"site-header"} -->
+<div class="wp-block-group site-header has-background-background-color has-background" style="border-bottom-color:#222222;border-bottom-width:1px;padding-top:16px;padding-bottom:16px">
 	<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 	<div class="wp-block-group">
-		<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"large"} /-->
+		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"left"}} -->
+		<div class="wp-block-group">
+			<!-- wp:navigation {"textColor":"secondary","overlayMenu":"never","layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"blockGap":"48px"},"typography":{"fontSize":"14px","fontWeight":"500","textTransform":"uppercase","letterSpacing":"0.05em"}}} -->
+				<!-- wp:navigation-link {"label":"Schedule","url":"#schedule"} /-->
+				<!-- wp:navigation-link {"label":"Speakers","url":"#speakers"} /-->
+				<!-- wp:navigation-link {"label":"FAQ","url":"#faq"} /-->
+			<!-- /wp:navigation -->
+		</div>
+		<!-- /wp:group -->
 		
-		<!-- wp:navigation {"textColor":"white","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"var:preset|spacing|40"}}} -->
-			<!-- wp:navigation-link {"label":"О фестивале","url":"#about"} /-->
-			<!-- wp:navigation-link {"label":"Спикеры","url":"#speakers"} /-->
-			<!-- wp:navigation-link {"label":"Расписание","url":"#schedule"} /-->
-			<!-- wp:navigation-link {"label":"FAQ","url":"#faq"} /-->
-			<!-- wp:navigation-link {"label":"Контакты","url":"#contacts"} /-->
-		<!-- /wp:navigation -->
+		<!-- wp:site-title {"style":{"elements":{"link":{"color":{"text":"#ffffff"}}},"typography":{"fontWeight":"700","fontSize":"18px","letterSpacing":"-0.02em"}},"textColor":"white"} /-->
+		
+		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"right"}} -->
+		<div class="wp-block-group">
+			<!-- wp:navigation {"textColor":"secondary","overlayMenu":"never","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":"32px"},"typography":{"fontSize":"14px","fontWeight":"500","textTransform":"uppercase","letterSpacing":"0.05em"}}} -->
+				<!-- wp:navigation-link {"label":"Sign Up","url":"#register"} /-->
+				<!-- wp:navigation-link {"label":"Login","url":"#login"} /-->
+			<!-- /wp:navigation -->
+
+			<!-- wp:buttons -->
+			<div class="wp-block-buttons">
+				<!-- wp:button {"backgroundColor":"white","textColor":"black","style":{"border":{"radius":"6px"},"typography":{"fontSize":"14px","fontWeight":"500"},"spacing":{"padding":{"top":"10px","bottom":"10px","left":"20px","right":"20px"}}}} -->
+				<div class="wp-block-button" style="font-size:14px;font-weight:500"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" style="border-radius:6px;padding-top:10px;padding-right:20px;padding-bottom:10px;padding-left:20px">GET TICKETS →</a></div>
+				<!-- /wp:button -->
+			</div>
+			<!-- /wp:buttons -->
+		</div>
+		<!-- /wp:group -->
 	</div>
 	<!-- /wp:group -->
 </div>

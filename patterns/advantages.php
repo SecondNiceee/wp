@@ -1,95 +1,77 @@
 <?php
 /**
- * Title: Преимущества - 3 колонки
+ * Title: Преимущества - 3 карточки
  * Slug: theme/advantages
- * Categories: featured, text
- * Keywords: преимущества, колонки, advantages
+ * Categories: featured
+ * Keywords: features, преимущества, колонки
  */
 ?>
-<!-- wp:group {"align":"full","backgroundColor":"white","style":{"spacing":{"padding":{"top":"80px","bottom":"80px"}}}} -->
-<div class="wp-block-group alignfull has-white-background-color has-background" style="padding-top:80px;padding-bottom:80px">
-	<!-- wp:group {"layout":{"type":"constrained"}} -->
-	<div class="wp-block-group">
-		<!-- wp:heading {"textAlign":"center","style":{"spacing":{"margin":{"bottom":"48px"}}}} -->
-		<h2 class="wp-block-heading has-text-align-center" style="margin-bottom:48px">Почему стоит прийти</h2>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"120px","bottom":"120px"}}},"backgroundColor":"background","layout":{"type":"constrained","contentSize":"1200px"}} -->
+<div class="wp-block-group alignfull has-background-background-color has-background" style="padding-top:120px;padding-bottom:120px">
+	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"80px"}}},"layout":{"type":"constrained","contentSize":"600px"}} -->
+	<div class="wp-block-group" style="margin-bottom:80px">
+		<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontWeight":"500"}}} -->
+		<h2 class="wp-block-heading has-text-align-center" style="font-weight:500">Почему PIXEL WAVE?</h2>
 		<!-- /wp:heading -->
-
-		<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"32px"}}}} -->
-		<div class="wp-block-columns">
-			<!-- wp:column {"style":{"spacing":{"padding":{"top":"24px","right":"24px","bottom":"24px","left":"24px"}}}} -->
-			<div class="wp-block-column" style="padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-				<div class="wp-block-group">
-					<!-- wp:group {"style":{"border":{"radius":"50%"},"spacing":{"padding":{"top":"16px","right":"24px","bottom":"16px","left":"24px"}}},"backgroundColor":"accent","layout":{"type":"constrained"}} -->
-					<div class="wp-block-group has-accent-background-color has-background" style="border-radius:50%;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px">
-						<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","fontSize":"28px"}},"textColor":"white"} -->
-						<p class="has-text-align-center has-white-color has-text-color" style="font-size:28px;font-weight:700">01</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-
-					<!-- wp:heading {"textAlign":"center","level":3} -->
-					<h3 class="wp-block-heading has-text-align-center">50+ художников</h3>
-					<!-- /wp:heading -->
-
-					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center">Цифровые художники из 12 стран мира представят свои работы и проведут мастер-классы для гостей фестиваля.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-
-			<!-- wp:column {"style":{"spacing":{"padding":{"top":"24px","right":"24px","bottom":"24px","left":"24px"}}}} -->
-			<div class="wp-block-column" style="padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-				<div class="wp-block-group">
-					<!-- wp:group {"style":{"border":{"radius":"50%"},"spacing":{"padding":{"top":"16px","right":"24px","bottom":"16px","left":"24px"}}},"backgroundColor":"accent","layout":{"type":"constrained"}} -->
-					<div class="wp-block-group has-accent-background-color has-background" style="border-radius:50%;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px">
-						<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","fontSize":"28px"}},"textColor":"white"} -->
-						<p class="has-text-align-center has-white-color has-text-color" style="font-size:28px;font-weight:700">02</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-
-					<!-- wp:heading {"textAlign":"center","level":3} -->
-					<h3 class="wp-block-heading has-text-align-center">VR-инсталляции</h3>
-					<!-- /wp:heading -->
-
-					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center">Полное погружение в виртуальные миры — авторские VR-проекты, AR-объекты и интерактивные пространства.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-
-			<!-- wp:column {"style":{"spacing":{"padding":{"top":"24px","right":"24px","bottom":"24px","left":"24px"}}}} -->
-			<div class="wp-block-column" style="padding-top:24px;padding-right:24px;padding-bottom:24px;padding-left:24px">
-				<!-- wp:group {"style":{"spacing":{"blockGap":"16px"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-				<div class="wp-block-group">
-					<!-- wp:group {"style":{"border":{"radius":"50%"},"spacing":{"padding":{"top":"16px","right":"24px","bottom":"16px","left":"24px"}}},"backgroundColor":"accent","layout":{"type":"constrained"}} -->
-					<div class="wp-block-group has-accent-background-color has-background" style="border-radius:50%;padding-top:16px;padding-right:24px;padding-bottom:16px;padding-left:24px">
-						<!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","fontSize":"28px"}},"textColor":"white"} -->
-						<p class="has-text-align-center has-white-color has-text-color" style="font-size:28px;font-weight:700">03</p>
-						<!-- /wp:paragraph -->
-					</div>
-					<!-- /wp:group -->
-
-					<!-- wp:heading {"textAlign":"center","level":3} -->
-					<h3 class="wp-block-heading has-text-align-center">Нетворкинг</h3>
-					<!-- /wp:heading -->
-
-					<!-- wp:paragraph {"align":"center"} -->
-					<p class="has-text-align-center">Знакомство с лидерами digital-индустрии, агентствами и студиями. Шанс найти команду или работу мечты.</p>
-					<!-- /wp:paragraph -->
-				</div>
-				<!-- /wp:group -->
-			</div>
-			<!-- /wp:column -->
-		</div>
-		<!-- /wp:columns -->
+		<!-- wp:paragraph {"align":"center","textColor":"secondary"} -->
+		<p class="has-text-align-center has-secondary-color has-text-color">Три дня погружения в будущее цифрового искусства с лучшими экспертами индустрии</p>
+		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->
+
+	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"24px"}}}} -->
+	<div class="wp-block-columns">
+		<!-- wp:column {"style":{"color":{"background":"#0a0a0a"},"border":{"radius":"12px","width":"1px","color":"#222222"},"spacing":{"padding":{"top":"48px","bottom":"48px","left":"48px","right":"48px"}}}} -->
+		<div class="wp-block-column has-border-color has-background" style="border-color:#222222;border-width:1px;border-radius:12px;background-color:#0a0a0a;padding-top:48px;padding-right:48px;padding-bottom:48px;padding-left:48px">
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px","fontWeight":"600","lineHeight":"1"}},"textColor":"white"} -->
+			<p class="has-white-color has-text-color" style="font-size:48px;font-weight:600;line-height:1">01</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:spacer {"height":"24px"} -->
+			<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+			<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"500"}},"textColor":"white"} -->
+			<h4 class="wp-block-heading has-white-color has-text-color" style="font-weight:500">50+ спикеров</h4>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"textColor":"secondary","style":{"typography":{"fontSize":"15px"}}} -->
+			<p class="has-secondary-color has-text-color" style="font-size:15px">Ведущие эксперты из Google, Meta, Яндекс и независимые креаторы поделятся опытом и инсайтами</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"style":{"color":{"background":"#0a0a0a"},"border":{"radius":"12px","width":"1px","color":"#222222"},"spacing":{"padding":{"top":"48px","bottom":"48px","left":"48px","right":"48px"}}}} -->
+		<div class="wp-block-column has-border-color has-background" style="border-color:#222222;border-width:1px;border-radius:12px;background-color:#0a0a0a;padding-top:48px;padding-right:48px;padding-bottom:48px;padding-left:48px">
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px","fontWeight":"600","lineHeight":"1"}},"textColor":"white"} -->
+			<p class="has-white-color has-text-color" style="font-size:48px;font-weight:600;line-height:1">02</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:spacer {"height":"24px"} -->
+			<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+			<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"500"}},"textColor":"white"} -->
+			<h4 class="wp-block-heading has-white-color has-text-color" style="font-weight:500">Практические воркшопы</h4>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"textColor":"secondary","style":{"typography":{"fontSize":"15px"}}} -->
+			<p class="has-secondary-color has-text-color" style="font-size:15px">Интерактивные сессии по генеративному дизайну, AI-арту и созданию иммерсивных инсталляций</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"style":{"color":{"background":"#0a0a0a"},"border":{"radius":"12px","width":"1px","color":"#222222"},"spacing":{"padding":{"top":"48px","bottom":"48px","left":"48px","right":"48px"}}}} -->
+		<div class="wp-block-column has-border-color has-background" style="border-color:#222222;border-width:1px;border-radius:12px;background-color:#0a0a0a;padding-top:48px;padding-right:48px;padding-bottom:48px;padding-left:48px">
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px","fontWeight":"600","lineHeight":"1"}},"textColor":"white"} -->
+			<p class="has-white-color has-text-color" style="font-size:48px;font-weight:600;line-height:1">03</p>
+			<!-- /wp:paragraph -->
+			<!-- wp:spacer {"height":"24px"} -->
+			<div style="height:24px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
+			<!-- wp:heading {"level":4,"style":{"typography":{"fontWeight":"500"}},"textColor":"white"} -->
+			<h4 class="wp-block-heading has-white-color has-text-color" style="font-weight:500">Нетворкинг</h4>
+			<!-- /wp:heading -->
+			<!-- wp:paragraph {"textColor":"secondary","style":{"typography":{"fontSize":"15px"}}} -->
+			<p class="has-secondary-color has-text-color" style="font-size:15px">Более 3000 участников — дизайнеров, разработчиков и предпринимателей из креативных индустрий</p>
+			<!-- /wp:paragraph -->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
 </div>
 <!-- /wp:group -->
