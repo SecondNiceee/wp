@@ -370,3 +370,108 @@ p { margin: 0 0 16px; }
 	.schedule-table th,
 	.schedule-table td { padding: 12px; font-size: 14px; }
 }
+
+/* ===== GUTENBERG BLOCK STYLES ===== */
+.site-content {
+	overflow-x: hidden;
+}
+
+.site-content > .alignfull {
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+.site-content > .alignwide {
+	margin-left: calc(-25vw + 50%);
+	margin-right: calc(-25vw + 50%);
+	max-width: 100vw;
+	width: 100vw;
+}
+
+/* Block table styles */
+.wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.wp-block-table thead {
+	background: var(--c-main);
+	color: #fff;
+	font-family: var(--font-secondary);
+}
+
+.wp-block-table th,
+.wp-block-table td {
+	padding: 16px 20px;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+}
+
+.wp-block-table td:first-child {
+	font-weight: bold;
+	color: var(--c-accent);
+	white-space: nowrap;
+}
+
+/* Block quote styles */
+.wp-block-quote {
+	border-left: none;
+	padding-left: 0;
+	margin: 0;
+}
+
+/* Block details/FAQ styles */
+.wp-block-details summary {
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	color: var(--c-main);
+	font-family: var(--font-secondary);
+}
+
+/* Contacts list styles */
+.contacts-list {
+	list-style: none !important;
+}
+
+.contacts-list li {
+	padding: 8px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+.contacts-list li strong {
+	color: var(--c-main);
+	display: inline-block;
+	min-width: 100px;
+}
+
+/* Block gallery hover */
+.wp-block-gallery .wp-block-image img {
+	transition: transform 0.3s;
+}
+
+.wp-block-gallery .wp-block-image img:hover {
+	transform: scale(1.03);
+}
+
+/* Block cover text */
+.wp-block-cover h1,
+.wp-block-cover h2 {
+	color: inherit;
+}
+
+/* Block media-text responsive */
+@media (max-width: 768px) {
+	.wp-block-media-text {
+		grid-template-columns: 1fr !important;
+	}
+	
+	.wp-block-columns {
+		flex-direction: column;
+	}
+	
+	.wp-block-cover h1 {
+		font-size: 36px !important;
+	}
+}
