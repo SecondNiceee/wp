@@ -1,0 +1,59 @@
+/* Editor styles for Gutenberg */
+
+/* Import variables */
+@import url('./variables.css');
+
+/* Match frontend typography */
+.editor-styles-wrapper {
+	font-family: var(--font-main) !important;
+	font-size: var(--size-text) !important;
+	line-height: var(--lh-text) !important;
+	color: var(--c-text) !important;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+	font-family: var(--font-secondary) !important;
+	color: var(--c-main) !important;
+}
+
+/* Table styles in editor */
+.editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.editor-styles-wrapper .wp-block-table thead {
+	background: var(--c-main);
+	color: #fff;
+}
+
+.editor-styles-wrapper .wp-block-table th,
+.editor-styles-wrapper .wp-block-table td {
+	padding: 16px 20px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Quote styles */
+.editor-styles-wrapper .wp-block-quote {
+	border-left: none;
+	padding-left: 0;
+}
+
+/* List styles for contacts */
+.editor-styles-wrapper .contacts-list {
+	list-style: none;
+}
+
+.editor-styles-wrapper .contacts-list li {
+	padding: 8px 0;
+	border-bottom: 1px solid #ddd;
+}
+
+/* Cover block text */
+.editor-styles-wrapper .wp-block-cover h1,
+.editor-styles-wrapper .wp-block-cover h2,
+.editor-styles-wrapper .wp-block-cover h3 {
+	color: inherit !important;
+}
