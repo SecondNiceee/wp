@@ -1,37 +1,96 @@
 <?php
 /**
- * Title: Hero - Главный баннер
+ * Title: Hero - Главный экран
  * Slug: theme/hero
  * Categories: featured, header
  * Keywords: hero, banner, главная
  */
 ?>
-<!-- wp:cover {"url":"<?php echo esc_url(get_template_directory_uri()); ?>/img/hero-bg.jpg","dimRatio":70,"overlayColor":"dark","minHeight":100,"minHeightUnit":"vh","isDark":false,"align":"full","className":"hero-pattern"} -->
-<div class="wp-block-cover alignfull is-light hero-pattern" style="min-height:100vh">
-	<span aria-hidden="true" class="wp-block-cover__background has-dark-background-color has-background-dim-70 has-background-dim"></span>
-	<img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/hero-bg.jpg" data-object-fit="cover"/>
+<!-- wp:cover {"dimRatio":0,"minHeight":100,"minHeightUnit":"vh","isDark":true,"align":"full","style":{"spacing":{"padding":{"top":"0","bottom":"120px"}}}} -->
+<div class="wp-block-cover alignfull is-dark" style="padding-top:0;padding-bottom:120px;min-height:100vh">
+	<span aria-hidden="true" class="wp-block-cover__background has-background-dim-0 has-background-dim"></span>
 	<div class="wp-block-cover__inner-container">
-		<!-- wp:group {"layout":{"type":"constrained","contentSize":"800px"}} -->
-		<div class="wp-block-group">
-			<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontSize":"56px","lineHeight":"1.2"}},"textColor":"white"} -->
-			<h1 class="wp-block-heading has-text-align-center has-white-color has-text-color" style="font-size:56px;line-height:1.2">Фестиваль цифрового искусства<br>«PIXEL WAVE 2026»</h1>
+		<!-- wp:group {"style":{"spacing":{"padding":{"top":"200px"}}},"layout":{"type":"constrained","contentSize":"1000px"}} -->
+		<div class="wp-block-group" style="padding-top:200px">
+			<!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"clamp(40px, 8vw, 72px)","fontWeight":"500","letterSpacing":"-0.03em","lineHeight":"1.05"}},"textColor":"white"} -->
+			<h1 class="wp-block-heading has-white-color has-text-color" style="font-size:clamp(40px, 8vw, 72px);font-weight:500;letter-spacing:-0.03em;line-height:1.05">Фестиваль цифрового<br>искусства для креаторов<br>и бизнес-лидеров</h1>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"22px"}},"textColor":"white"} -->
-			<p class="has-text-align-center has-white-color has-text-color" style="font-size:22px">Три дня погружения в мир digital-art, нейросетей и интерактивных инсталляций</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:spacer {"height":"80px"} -->
+			<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
+			<!-- /wp:spacer -->
 
-			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"40px"}}}} -->
-			<div class="wp-block-buttons" style="margin-top:40px">
-				<!-- wp:button {"backgroundColor":"accent","textColor":"white","style":{"border":{"radius":"4px"},"typography":{"fontWeight":"700"}},"fontSize":"normal"} -->
-				<div class="wp-block-button has-custom-font-size has-normal-font-size" style="font-weight:700"><a class="wp-block-button__link has-white-color has-accent-background-color has-text-color has-background wp-element-button" style="border-radius:4px">Зарегистрироваться</a></div>
-				<!-- /wp:button -->
+			<!-- wp:group {"style":{"border":{"top":{"color":"#222222","width":"1px"}},"spacing":{"padding":{"top":"48px"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
+			<div class="wp-block-group" style="border-top-color:#222222;border-top-width:1px;padding-top:48px">
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"secondary"} -->
+						<p class="has-secondary-color has-text-color" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Москва</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","fontWeight":"500"}},"textColor":"white"} -->
+						<p class="has-white-color has-text-color" style="font-size:16px;font-weight:500">Технопарк Сколково</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
 
-				<!-- wp:button {"backgroundColor":"transparent","textColor":"white","style":{"border":{"radius":"4px","width":"2px","color":"#ffffff"},"typography":{"fontWeight":"700"}},"fontSize":"normal","className":"is-style-outline"} -->
-				<div class="wp-block-button has-custom-font-size is-style-outline has-normal-font-size" style="font-weight:700"><a class="wp-block-button__link has-white-color has-transparent-background-color has-text-color has-background has-border-color wp-element-button" style="border-color:#ffffff;border-width:2px;border-radius:4px">Программа</a></div>
-				<!-- /wp:button -->
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"secondary"} -->
+						<p class="has-secondary-color has-text-color" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Дата</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","fontWeight":"500"}},"textColor":"white"} -->
+						<p class="has-white-color has-text-color" style="font-size:16px;font-weight:500">15 сентября 2026</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"secondary"} -->
+						<p class="has-secondary-color has-text-color" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Онлайн</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","fontWeight":"500"}},"textColor":"white"} -->
+						<p class="has-white-color has-text-color" style="font-size:16px;font-weight:500">Бесплатно</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+				<div class="wp-block-group">
+					<!-- wp:group {"style":{"spacing":{"blockGap":"4px"}},"layout":{"type":"flex","orientation":"vertical"}} -->
+					<div class="wp-block-group">
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"12px","textTransform":"uppercase","letterSpacing":"0.1em"}},"textColor":"secondary"} -->
+						<p class="has-secondary-color has-text-color" style="font-size:12px;letter-spacing:0.1em;text-transform:uppercase">Early Bird</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"16px","fontWeight":"500"}},"textColor":"white"} -->
+						<p class="has-white-color has-text-color" style="font-size:16px;font-weight:500">12 000 ₽ <span style="text-decoration:line-through;color:#666">25 000 ₽</span></p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:buttons -->
+				<div class="wp-block-buttons">
+					<!-- wp:button {"backgroundColor":"white","textColor":"black","style":{"border":{"radius":"6px"},"typography":{"fontSize":"14px","fontWeight":"500"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+					<div class="wp-block-button" style="font-size:14px;font-weight:500"><a class="wp-block-button__link has-black-color has-white-background-color has-text-color has-background wp-element-button" style="border-radius:6px;padding-top:14px;padding-right:28px;padding-bottom:14px;padding-left:28px">GET TICKETS →</a></div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
 			</div>
-			<!-- /wp:buttons -->
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>

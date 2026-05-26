@@ -1,4 +1,5 @@
-/* Editor styles for Gutenberg */
+/* Editor styles for Gutenberg - Dark Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 /* Import variables */
 @import url('./variables.css');
@@ -9,51 +10,152 @@
 	font-size: var(--size-text) !important;
 	line-height: var(--lh-text) !important;
 	color: var(--c-text) !important;
+	background: var(--c-background) !important;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .editor-styles-wrapper h1,
 .editor-styles-wrapper h2,
 .editor-styles-wrapper h3,
-.editor-styles-wrapper h4 {
-	font-family: var(--font-secondary) !important;
-	color: var(--c-main) !important;
+.editor-styles-wrapper h4,
+.editor-styles-wrapper h5,
+.editor-styles-wrapper h6 {
+	font-family: var(--font-main) !important;
+	color: #ffffff !important;
+	font-weight: 500 !important;
+	letter-spacing: -0.02em !important;
+}
+
+.editor-styles-wrapper h1 {
+	font-size: clamp(40px, 8vw, 72px) !important;
+	letter-spacing: -0.03em !important;
+	line-height: 1.05 !important;
+}
+
+.editor-styles-wrapper h2 {
+	font-size: clamp(32px, 5vw, 48px) !important;
+	line-height: 1.1 !important;
+}
+
+/* Links */
+.editor-styles-wrapper a {
+	color: #ffffff !important;
+}
+
+.editor-styles-wrapper a:hover {
+	color: var(--c-secondary) !important;
 }
 
 /* Table styles in editor */
-.editor-styles-wrapper .wp-block-table.is-style-stripes tbody tr:nth-child(odd) {
-	background: #f9f9f9;
+.editor-styles-wrapper .wp-block-table {
+	border-collapse: collapse;
 }
 
 .editor-styles-wrapper .wp-block-table thead {
-	background: var(--c-main);
-	color: #fff;
+	background: transparent;
 }
 
-.editor-styles-wrapper .wp-block-table th,
+.editor-styles-wrapper .wp-block-table th {
+	color: var(--c-muted);
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	padding: 16px 0;
+	border-bottom: 1px solid var(--c-border);
+}
+
 .editor-styles-wrapper .wp-block-table td {
-	padding: 16px 20px;
-	border-bottom: 1px solid #eee;
+	padding: 24px 0;
+	border-bottom: 1px solid var(--c-border);
+	color: var(--c-text);
+}
+
+.editor-styles-wrapper .wp-block-table td:first-child {
+	font-family: var(--font-mono);
+	color: var(--c-muted);
+	font-size: 14px;
+}
+
+/* Column styles */
+.editor-styles-wrapper .wp-block-column {
+	background: var(--c-surface);
+	border: 1px solid var(--c-border);
+	border-radius: 12px;
+	padding: 48px;
 }
 
 /* Quote styles */
 .editor-styles-wrapper .wp-block-quote {
 	border-left: none;
-	padding-left: 0;
+	padding: 32px;
+	background: var(--c-surface);
+	border: 1px solid var(--c-border);
+	border-radius: 12px;
 }
 
-/* List styles for contacts */
-.editor-styles-wrapper .contacts-list {
-	list-style: none;
+.editor-styles-wrapper .wp-block-quote p {
+	font-size: 16px;
+	line-height: 1.7;
 }
 
-.editor-styles-wrapper .contacts-list li {
-	padding: 8px 0;
-	border-bottom: 1px solid #ddd;
+.editor-styles-wrapper .wp-block-quote cite {
+	color: var(--c-muted);
+	font-size: 14px;
+}
+
+/* Details/FAQ styles */
+.editor-styles-wrapper .wp-block-details {
+	border-bottom: 1px solid var(--c-border);
+}
+
+.editor-styles-wrapper .wp-block-details summary {
+	padding: 24px 0;
+	font-size: 20px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+/* Button styles */
+.editor-styles-wrapper .wp-block-button__link {
+	border-radius: 6px;
+	padding: 14px 28px;
+	font-size: 14px;
+	font-weight: 500;
 }
 
 /* Cover block text */
 .editor-styles-wrapper .wp-block-cover h1,
 .editor-styles-wrapper .wp-block-cover h2,
-.editor-styles-wrapper .wp-block-cover h3 {
+.editor-styles-wrapper .wp-block-cover h3,
+.editor-styles-wrapper .wp-block-cover p {
 	color: inherit !important;
+}
+
+/* Gallery styles */
+.editor-styles-wrapper .wp-block-gallery {
+	gap: 4px !important;
+}
+
+.editor-styles-wrapper .wp-block-gallery .wp-block-image img {
+	filter: grayscale(30%);
+}
+
+/* Navigation styles */
+.editor-styles-wrapper .wp-block-navigation-link a {
+	color: var(--c-secondary) !important;
+	font-size: 14px !important;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+/* Separator */
+.editor-styles-wrapper .wp-block-separator {
+	border-color: var(--c-border) !important;
+}
+
+/* Spacer visibility */
+.editor-styles-wrapper .wp-block-spacer {
+	background: rgba(255,255,255,0.05);
 }
